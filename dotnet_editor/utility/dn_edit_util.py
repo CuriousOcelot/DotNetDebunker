@@ -7,8 +7,9 @@ from typing import TYPE_CHECKING, Dict, List, Tuple
 import dnfile
 
 from dotnet_editor.data_classes.corilmethod_fatformat import CorILMethod_FatFormat
-from dotnet_editor.data_classes.corimethod_sect_ehtable import CorILMethod_Sect_EHTable
-from dotnet_editor.utility.utility import info_logging_with_no_line_num, error_logging_with_no_line_num
+from dotnet_editor.data_classes.corimethod_sect_ehtable import CorILMethod_Sect_EHTable_Tiny, \
+    CorILMethod_Sect_EHTable_Fat, CorILMethod_Sect_EHTable
+from dotnet_editor.utility.utility import info_logging_with_no_line_num
 
 if TYPE_CHECKING:
     from dotnet_editor.helper.assembly_analyzer import AssemblyAnalyzer
@@ -76,16 +77,16 @@ def create_new_method_body_fat(
                 break
 
         if flag_is_fat_eh_clause:
-            clause_size = info.eh_count * 24  # fat clauses are 24 bytes
-            section_kind = 0x41  # CorILMethod_Sect_FatFormat | CorILMethod_Sect_EHTable
+            eh_table = CorILMethod_Sect_EHTable_Fat(
+                info.eh_count, eh_clause_details
+            )
         else:
-            clause_size = info.eh_count * 12  # tiny clauses are 12 bytes
-            section_kind = 0x01  # CorILMethod_Sect_EHTable (tiny format)
+            eh_table = CorILMethod_Sect_EHTable_Tiny(
+                info.eh_count, eh_clause_details
+            )
 
-        eh_table = CorILMethod_Sect_EHTable(
-            section_kind, 4 + clause_size, 0, eh_clause_details
-        )
-        for eh_clause in eh_clause_details:
+        for num in range(eh_table.eh_count):
+            eh_clause = eh_clause_details[num]
             if flag_is_fat_eh_clause:
                 total_eh_clause_bytes.extend(eh_clause.to_fat_bytes())
             else:
