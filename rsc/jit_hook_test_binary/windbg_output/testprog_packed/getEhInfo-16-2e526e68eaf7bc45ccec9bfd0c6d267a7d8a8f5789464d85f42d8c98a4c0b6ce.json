@@ -1,0 +1,40 @@
+{
+    "ftn_value": [
+        "0x00",
+        "0x00",
+        "0x00",
+        "0x28",
+        "0xFF",
+        "0xFF",
+        "0x2F",
+        "0x80"
+    ],
+    "ftn_dumps": "Method Name:  DomainBoundILStubClass.IL_STUB_ReversePInvoke(Int64, Int64, Int64, Int32, Int64, Int64)\nClass:        00007ffe74e26268\nMethodTable:  00007ffe74e262e0\nmdToken:      0000000006000000\nModule:       00007ffe74e241b8\nIsJitted:     no\nCodeAddr:     ffffffffffffffff\nTransparency: Critical\n",
+    "eh_number": 0,
+    "eh_clause": [
+        "0x02",
+        "0x00",
+        "0x00",
+        "0x00",
+        "0x02",
+        "0x00",
+        "0x00",
+        "0x00",
+        "0x78",
+        "0x00",
+        "0x00",
+        "0x00",
+        "0x7D",
+        "0x00",
+        "0x00",
+        "0x00",
+        "0x10",
+        "0x00",
+        "0x00",
+        "0x00",
+        "0x00",
+        "0x00",
+        "0x00",
+        "0x00"
+    ]
+}

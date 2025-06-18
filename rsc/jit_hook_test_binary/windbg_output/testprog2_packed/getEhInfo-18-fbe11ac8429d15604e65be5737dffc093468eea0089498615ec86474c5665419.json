@@ -1,0 +1,40 @@
+{
+    "ftn_value": [
+        "0x0F",
+        "0x00",
+        "0x1A",
+        "0x20",
+        "0x12",
+        "0x00",
+        "0x28",
+        "0x00"
+    ],
+    "ftn_dumps": "Method Name:  testprog.Program.Main()\nClass:        00007ffe74fb1b78\nMethodTable:  00007ffe74e26f40\nmdToken:      000000000600000f\nModule:       00007ffe74e241b8\nIsJitted:     no\nCodeAddr:     ffffffffffffffff\nTransparency: Critical\n",
+    "eh_number": 0,
+    "eh_clause": [
+        "0x00",
+        "0x00",
+        "0x00",
+        "0x00",
+        "0xEE",
+        "0x00",
+        "0x00",
+        "0x00",
+        "0x15",
+        "0x00",
+        "0x00",
+        "0x00",
+        "0x03",
+        "0x01",
+        "0x00",
+        "0x00",
+        "0x1B",
+        "0x00",
+        "0x00",
+        "0x00",
+        "0x1B",
+        "0x00",
+        "0x00",
+        "0x01"
+    ]
+}

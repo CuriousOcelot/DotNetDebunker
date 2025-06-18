@@ -1,0 +1,4 @@
+qprompt
+lief
+dnfile
+pythonnet

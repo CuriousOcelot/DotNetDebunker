@@ -1,0 +1,40 @@
+{
+    "ftn_value": [
+        "0x0C",
+        "0x00",
+        "0x14",
+        "0x20",
+        "0x0F",
+        "0x00",
+        "0x28",
+        "0x00"
+    ],
+    "ftn_dumps": "Method Name:  testprog.Program.fatFunc6()\nClass:        00007ffe74f91b78\nMethodTable:  00007ffe74e06f40\nmdToken:      000000000600000c\nModule:       00007ffe74e041b8\nIsJitted:     no\nCodeAddr:     ffffffffffffffff\nTransparency: Critical\n",
+    "eh_number": 0,
+    "eh_clause": [
+        "0x00",
+        "0x00",
+        "0x00",
+        "0x00",
+        "0x01",
+        "0x00",
+        "0x00",
+        "0x00",
+        "0x14",
+        "0x00",
+        "0x00",
+        "0x00",
+        "0x15",
+        "0x00",
+        "0x00",
+        "0x00",
+        "0x15",
+        "0x00",
+        "0x00",
+        "0x00",
+        "0x01",
+        "0x00",
+        "0x00",
+        "0x01"
+    ]
+}
